@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px 15px;
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    color: #202938;
+}
+
+.container {
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+    color: #183b70;
+}
+
+.container > p {
+    text-align: center;
+    color: #596579;
+}
+
+.card {
+    background: white;
+    margin: 22px 0;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px #00000012;
+}
+
+h2 {
+    margin-top: 0;
+    color: #244f88;
+}
+
+label {
+    display: block;
+    margin: 12px 0 7px;
+}
+
+input[type="number"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin: 18px 0;
+}
+
+.options label {
+    margin: 0;
+}
+
+button {
+    padding: 12px 18px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 6px;
+    background: #2458a6;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #173e7c;
+}
+
+.password-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.password-row button {
+    flex-shrink: 0;
+    margin-top: 0;
+}
+
+.strength {
+    font-weight: bold;
+}
+
+.weak {
+    color: #c62828;
+}
+
+.medium {
+    color: #a66300;
+}
+
+.strong {
+    color: #16803c;
+}
+
+.error {
+    text-align: center;
+    color: #c62828;
+    font-weight: bold;
+}
+
+.notice {
+    font-size: 13px;
+    color: #596579;
+}
+
+@media (max-width: 480px) {
+    .options {
+        grid-template-columns: 1fr;
+    }
+
+    .password-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .password-row button {
+        width: 100%;
+    }
+
+    .card {
+        padding: 18px;
+    }
+}
